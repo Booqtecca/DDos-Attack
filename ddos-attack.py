@@ -38,7 +38,7 @@ def send_packet(sock, ip, port, bytes):
 def main():
     print_banner()
     ip = input("Enter target IP address: ")
-    port = int(input("Enter target port: "))
+    port = int(input("Enter target port (default is 19132 for Minecraft Bedrock): ") or "19132")
     num_threads = int(input("Enter number of threads: "))
     packet_size = int(input("Enter packet size (in bytes): "))
     
